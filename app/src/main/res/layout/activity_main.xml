@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="com.example.amolgursali.firebaseapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/firebase_logo"
+            android:layout_height="100dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Firebase Login"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_orange_light"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/email"
+            android:hint="EmailID"
+            android:background="@drawable/edittextbg"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:fontFamily="monospace"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/pass"
+            android:hint="Password"
+            android:fontFamily="monospace"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittextbg"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/submit"
+            android:text="Login"
+            android:fontFamily="monospace"
+            android:layout_height="wrap_content" />
+
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Not Yet Registered ? Register Here."
+                android:gravity="center"
+                android:fontFamily="monospace"
+                android:id="@+id/register"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Forget Password ?"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:fontFamily="monospace"
+            android:id="@+id/forgetpass"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressbar"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
